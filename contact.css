@@ -1,0 +1,86 @@
+html {
+  background-image: url(images/autumn.jpg);
+  background-size: cover;
+  z-index: -1000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #bb137a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+.container {
+  border-radius: 40px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  outline: none;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container  {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu  {
+    font-size: 10px;
+    position: relative;
+    top: -20px;
+    padding-top: 16px;
+  }
+}
+
+input,textarea,select {
+    border-radius: 20px;
+    outline: none;
+    
+}
+footer {
+    color: rgb(0, 0, 0) !important; 
+    font-weight: bold !important;
+  }
+  footer a {
+    color: rgb(255, 0, 0)!important; 
+  }
